@@ -101,5 +101,5 @@ Jawa Tengah 57417
 
 ---
 
-Developed with ❤️ by **[Your Name/Team]**
+Developed with ❤️ by **Yasin Nashrullah**
 _Inspired by the art of baking._
