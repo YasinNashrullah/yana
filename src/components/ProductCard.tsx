@@ -1,4 +1,3 @@
-import React from 'react';
 import type { BreadProduct } from '../types';
 import { generateWhatsAppLink } from '../utils/whatsapp';
 
@@ -6,7 +5,7 @@ interface ProductCardProps {
     product: BreadProduct;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+const ProductCard = ({ product }: ProductCardProps) => {
     const isFlashSale = product.category === 'bs';
     const waLink = generateWhatsAppLink(product.name, product.price);
 
@@ -23,11 +22,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             <div className="p-6">
                 <div className="flex justify-between items-start mb-2">
                     <h3 className="text-xl font-bold text-gray-900">{product.name}</h3>
-                    <span className={`px-2 py-1 text-xs font-semibold rounded-full ${product.category === 'fresh' ? 'bg-green-100 text-green-800' :
-                        product.category === 'sweet' ? 'bg-pink-100 text-pink-800' :
-                            product.category === 'toast' ? 'bg-blue-100 text-blue-800' :
-                                product.category === 'cake' ? 'bg-purple-100 text-purple-800' :
-                                    'bg-yellow-100 text-yellow-800'
+                    <span className={`px-2 py-1 text-xs font-semibold rounded-full ${product.category === 'sweet' ? 'bg-pink-100 text-pink-800' :
+                        product.category === 'toast' ? 'bg-blue-100 text-blue-800' :
+                            product.category === 'cake' ? 'bg-purple-100 text-purple-800' :
+                                'bg-yellow-100 text-yellow-800'
                         }`}>
                         {product.category === 'bs' ? 'Flash Sale' : product.category.charAt(0).toUpperCase() + product.category.slice(1)}
                     </span>

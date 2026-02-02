@@ -29,7 +29,7 @@ export const products: BreadProduct[] = [
         category: 'sweet',
         stock: 25
     },
-    // Flash Sale Items (BS Types)
+    
     {
         id: '5',
         name: 'Roti Manis Mix (BS)',
