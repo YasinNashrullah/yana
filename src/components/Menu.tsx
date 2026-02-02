@@ -7,7 +7,6 @@ type FilterType = 'all' | 'sweet' | 'toast' | 'cake';
 const Menu = () => {
     const [filter, setFilter] = useState<FilterType>('all');
 
-    // Filter out 'bs' category (Flash Sale items) for the main menu
     const menuItems = products.filter(product => {
         if (product.category === 'bs') return false;
         if (filter === 'all') return true;

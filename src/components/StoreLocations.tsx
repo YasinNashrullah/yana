@@ -9,7 +9,6 @@ const StoreLocations = () => {
                 </h2>
 
                 <div className="bg-amber-50 rounded-3xl p-8 md:p-12 shadow-lg border border-amber-100 flex flex-col md:flex-row items-center gap-8 md:gap-12">
-                    {/* Map/Image */}
                     <div className="w-full md:w-1/2 h-64 bg-gray-200 rounded-2xl overflow-hidden shadow-inner relative group">
                         <img
                             src="https://images.unsplash.com/photo-1556742400-b5b7c5121f99?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -23,7 +22,6 @@ const StoreLocations = () => {
                         </div>
                     </div>
 
-                    {/* Store Details */}
                     <div className="w-full md:w-1/2 text-left space-y-6">
                         <div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-2">YANA BAKERY</h3>

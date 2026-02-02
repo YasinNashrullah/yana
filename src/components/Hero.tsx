@@ -4,10 +4,8 @@ import { motion } from 'framer-motion';
 const Hero = () => {
     return (
         <section className="relative pt-20 pb-24 lg:pt-32 lg:pb-32 overflow-hidden">
-            {/* Seamless Gradient Background */}
             <div className="absolute inset-0 bg-gradient-to-b from-orange-50 via-amber-50 to-white -z-20"></div>
 
-            {/* Optimized Background Decor (No Blur, High Performance Gradients) */}
             <motion.div
                 animate={{
                     scale: [1, 1.1, 1],
@@ -28,7 +26,6 @@ const Hero = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 
-                    {/* Copywriting Section */}
                     <div className="lg:col-span-6 text-center lg:text-left">
                         <motion.div
                             initial={{ opacity: 0, x: -50 }}
@@ -90,11 +87,9 @@ const Hero = () => {
                         </motion.div>
                     </div>
 
-                    {/* Visual Collage Section */}
                     <div className="lg:col-span-6 relative perspective-1000 mt-12 lg:mt-0">
                         <div className="relative w-full max-w-[600px] mx-auto aspect-square">
 
-                            {/* Main Image */}
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.8, rotate: -3 }}
                                 animate={{ opacity: 1, scale: 1, rotate: 0 }}
@@ -106,11 +101,9 @@ const Hero = () => {
                                     alt="Roti Tawar Premium"
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                 />
-                                {/* Subtle overlay for better depth */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
                             </motion.div>
 
-                            {/* Secondary Floating Image */}
                             <motion.div
                                 initial={{ opacity: 0, x: -30, y: 30 }}
                                 animate={{ opacity: 1, x: 0, y: 0 }}
@@ -124,7 +117,6 @@ const Hero = () => {
                                 />
                             </motion.div>
 
-                            {/* Floating Review Card */}
                             <motion.div
                                 initial={{ opacity: 0, scale: 0 }}
                                 animate={{ opacity: 1, scale: 1 }}
@@ -140,7 +132,6 @@ const Hero = () => {
                                 <p className="text-[10px] text-gray-500 mt-1">- Budi </p>
                             </motion.div>
 
-                            {/* Clean Decorative Circles (No Blur) */}
                             <div className="absolute top-0 right-10 w-24 h-24 rounded-full border-4 border-amber-200/40 z-10" />
                             <div className="absolute bottom-20 left-20 w-16 h-16 rounded-full bg-orange-100/50 z-10" />
                         </div>
